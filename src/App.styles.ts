@@ -18,3 +18,17 @@ export const Header = styled.h1`
     text-align: center;
     margin-bottom: 30px
 `;
+
+export const ScreenWarning = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+`;
+ 
+export const PhotoList = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px
+`;
