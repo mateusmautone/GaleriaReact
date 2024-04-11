@@ -8,7 +8,7 @@ export const Container = styled.div`
 
 export const Area = styled.div`
     margin: auto;
-    max-widht: 980px;
+    max-width: 980px;
     padding: 30px 0;
 `;
 
@@ -16,19 +16,20 @@ export const Header = styled.h1`
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-bottom: 30px
+    margin-bottom: 30px;
 `;
 
 export const ScreenWarning = styled.div`
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
 `;
- 
+
 export const PhotoList = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    
+    
 `;

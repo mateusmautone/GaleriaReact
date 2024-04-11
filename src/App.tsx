@@ -4,6 +4,7 @@ import * as Photos from './services/photos'
 import { Photo } from './types/Photo'
 import React from 'react';
 import ReactLoading from 'react-loading';
+import { PhotoItem } from './components/PhotoItem';
 
 const App = () => {
    const [loading, setLoading] = useState(false);
@@ -27,14 +28,14 @@ const App = () => {
 
         { loading && 
           <C.ScreenWarning>
-            <ReactLoading type={'spin'} color={'white'} height={'100px'} width={'100px'}  />
+            <ReactLoading className="loader" type={'spin'} color={'white'} height={'100px'} width={'100px'}  />
           </C.ScreenWarning>
         }
 
         {!loading && photos.length > 0 &&
         <C.PhotoList>
           {photos.map((item,index)=> (
-            <div>{item.name}</div>
+            <PhotoItem key={index} url={item.url} name={item.name}/>
           ))}
         </C.PhotoList>
         }
