@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+Página de Cadastro:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Os usuários poderão se cadastrar fornecendo um nome de usuário, e-mail válido e senha.
+A validação dos campos será realizada para garantir que os dados fornecidos sejam adequados.
+Após o cadastro bem-sucedido, os usuários serão redirecionados para a página de login.
+Página de Login:
 
-## Available Scripts
+Os usuários cadastrados poderão fazer login utilizando seu e-mail e senha.
+A autenticação será realizada através do Firebase Authentication.
+Após o login bem-sucedido, os usuários serão redirecionados para a página principal da galeria.
+Página Principal da Galeria:
 
-In the project directory, you can run:
+A página principal exibirá todas as mídias (fotos, vídeos, arquivos) que foram carregadas pelos usuários.
+As mídias serão exibidas em uma grade responsiva, permitindo que os usuários visualizem facilmente o conteúdo.
+Os usuários poderão clicar em uma mídia para visualizá-la em tela cheia ou em um modal.
+Upload de Mídia:
 
-### `npm start`
+Após fazer login, os usuários terão a opção de fazer upload de fotos, vídeos ou arquivos para a galeria.
+O upload será realizado utilizando o Firebase Storage para armazenamento de mídia.
+Os usuários poderão selecionar múltiplos arquivos para upload de uma vez.
+Durante o processo de upload, os usuários poderão adicionar descrições ou tags às suas mídias.
+Painel de Controle de Usuário:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Os usuários autenticados terão acesso a um painel de controle onde poderão visualizar e gerenciar suas próprias mídias.
+No painel de controle, os usuários poderão editar ou excluir suas mídias, bem como atualizar suas informações de perfil.
+Integração Firebase:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O Firebase será utilizado para autenticação de usuários, armazenamento de mídia, gerenciamento de banco de dados e hospedagem do aplicativo.
+Serão utilizadas as funcionalidades do Firebase Authentication, Firestore e Storage.
+Estilização com Styled Components:
 
-### `npm test`
+Todo o design da galeria será implementado utilizando Styled Components para garantir uma aparência consistente e flexível.
+O design será responsivo para proporcionar uma experiência agradável em dispositivos móveis e desktops.
+Roteamento com React Router:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Utilizaremos o React Router para gerenciar a navegação entre diferentes páginas da galeria, como a página de login, a página principal e o painel de controle de usuário.
