@@ -2,7 +2,8 @@ import Home from '../Pages/Home.tsx';
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import  Login  from '../Pages/Login.tsx';
+import Login from '../Pages/Login/index.jsx';
+import Register from '../Pages/Register/index.jsx';
 
  
  
@@ -11,7 +12,9 @@ const AppRoutes = () => {
      <Router>
             <Routes>
                 <Route path="/" element={<Home/>}></Route>       
-                <Route path="/login" element={<Login/>}></Route>                 
+                <Route path="/login" element={<Login/>}></Route> 
+                <Route path="/register" element={<Register/>}></Route> 
+                                
             </Routes>
         </Router>
 
