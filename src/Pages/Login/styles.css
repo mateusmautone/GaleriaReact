@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #ffffff;
   }
   .container .header {
     display: flex;
@@ -46,7 +47,7 @@
     padding: 16px;
     width: 520px;
     height: 49px;
-    border: 1px solid #5C73DB;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 12px;
     margin-bottom: 12px;
   
@@ -58,7 +59,7 @@
     line-height: 19px;
     padding-top: 16px;
     padding-bottom: 16px;
-    color: #5C73DB;
+    color: rgb(83, 83, 83);
   }
   
   .container form .button {

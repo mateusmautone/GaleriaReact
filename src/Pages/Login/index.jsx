@@ -24,8 +24,14 @@ function Login() {
     return <p>carregando...</p>;
   }
   if (user) {
-    navigate("/");
+    if (email === "admin@gmail.com" && password === "admin2") {
+      alert('oi')
+    } else {
+      navigate("/");
+    }
+  
   }
+ 
   return (
     <div className="container">
       <header className="header">
